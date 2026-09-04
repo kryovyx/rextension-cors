@@ -24,8 +24,9 @@ carries a temporary `replace` until it is.
   function gets its own case; the README's coverage figure is recomputed from
   a measurement, never hand-edited.
 - **No `replace` directives** in `go.mod`.
-- **Commits:** `<gitmoji><type>(<scope>): <description>` — feat, fix, docs,
-  style, refactor, test, chore.
+- **Commits:** [COMMIT-CONVENTIONS.md](COMMIT-CONVENTIONS.md) — gitmoji, a
+  space, an imperative summary; no `type(scope)` prefix. At most one trailer,
+  and no generated footers.
 - `make check` here runs fmt, vet and race tests for this module alone.
 - Default branch is `main`. **Never push without asking** — github
   authenticates with a hardware key that needs a physical tap, so an
