@@ -123,3 +123,13 @@ decide, or a cross-origin client cannot see the status they produced.
 ```
 make check      # gofmt + vet + go test -race
 ```
+
+## Contributing
+
+**The framework is in alpha, and external contributions open at `v1.0.0`.**
+Until then pull requests will be closed unmerged — but issues are very welcome.
+Bug reports, questions and feature requests all feed into what `v1.0.0` looks
+like.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the rules that will apply, and
+[COMMIT-CONVENTIONS.md](COMMIT-CONVENTIONS.md) for the commit format.

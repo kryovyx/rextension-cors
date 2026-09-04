@@ -1,7 +1,8 @@
 # Commit conventions
 
-Every repo in this project follows this. The file is byte-identical in each of
-them, and `make claude-md` at the workspace root fails if a copy drifts.
+Every repo in the REX framework follows this, and the file is identical in each
+of them. It applies to pull requests too, once contributions open — each
+package's CONTRIBUTING.md explains why they are not open yet.
 
 ## Format
 
@@ -74,40 +75,10 @@ a year.
 
 A commit written without an agent carries no trailer at all.
 
-## Signing
+`Signed-off-by` is reserved: a DCO sign-off is expected to become a requirement
+when contributions open, and it will be the one other permitted trailer.
 
-**Every commit is GPG-signed.** `commit.gpgsign` and `tag.gpgsign` are on, so
-this is automatic — but it is worth knowing how to check and how to repair,
-because one path bypasses it.
+## Pull requests
 
-```sh
-git log --format='%G? %h %s'          # G = good signature
-git log --format='%G?' | grep -cv '^G'  # must print 0
-```
-
-**Wiki edits made in a browser are unsigned.** gollum commits through rugged,
-which ignores `commit.gpgsign`. After editing a wiki in the browser, and
-*before* pushing, re-sign:
-
-```sh
-git commit --amend --no-edit -S              # just the tip
-git rebase --exec 'git commit --amend --no-edit -n -S' <base>   # a range
-```
-
-Re-signing rewrites commits and so changes their SHAs. Only ever do it to
-commits that have not been pushed.
-
-## Rewriting history
-
-- **Never rewrite pushed history.** Not to reword, not to re-sign.
-- Unpushed commits are fair game, and rewording them onto this convention is
-  preferred over leaving a mixed history.
-- On **2026-09-04** the 57 then-unpushed commits were reworded onto this
-  format. Everything at or below each repo's remote tip predates it and uses
-  the older `<gitmoji><type>(<scope>): <description>` form. That boundary is
-  deliberate and is not to be "fixed".
-
-## Branches
-
-Modules commit to `main`. Wiki repos use `master`, because GitHub renders a
-wiki only from `master` — a new wiki repo needs `git init -b master`.
+Target `main`. One logical change per pull request; if the subject needs an
+"and", it is probably two.
