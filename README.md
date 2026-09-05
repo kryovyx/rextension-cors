@@ -124,6 +124,12 @@ decide, or a cross-origin client cannot see the status they produced.
 make check      # gofmt + vet + go test -race
 ```
 
+## Where this fits
+
+New in the REX v0.3.0 release, at **v0.1.0** — there is nothing to migrate
+from. [MIGRATION.md](MIGRATION.md) says what this module is, what it costs to
+adopt, and links to the guide for every other module in that release.
+
 ## Contributing
 
 **The framework is in alpha, and external contributions open at `v1.0.0`.**
