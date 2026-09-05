@@ -1,4 +1,4 @@
-github.com/kryovyx/dix v0.1.0 h1:I4SS2/Soi+Kh66AfDX1eztcjwfwLZBm32UV9yz5eS9w=
-github.com/kryovyx/dix v0.1.0/go.mod h1:Lpg/bUJLUDYDx1G3/yxcAk+Tr9TSJvEhODw9M0O51c0=
-github.com/kryovyx/rextension v0.2.1 h1:slbnitAQ4XsI1hfqd++m2q5Er9ajHvsO7q7tl64tU0o=
-github.com/kryovyx/rextension v0.2.1/go.mod h1:drWtE9rUnCJYhAc8Eob+lS3yEOzM4cyvmaehdI7J/oY=
+github.com/kryovyx/corex v0.1.0 h1:1clb7XlGUccqpX5tasPW2mBXkh1Vx56zgteerHcRM40=
+github.com/kryovyx/corex v0.1.0/go.mod h1:w3r63NH7ztXHZTUkTAR4qd1Ey69uErmEC0CqL2QyQfo=
+github.com/kryovyx/rextension v0.3.0 h1:GuMc9L+0BPA+O8SJN92A0eEEwuYgvOw97cA3THXVNJU=
+github.com/kryovyx/rextension v0.3.0/go.mod h1:rG/YCpirP8qTgJu2rPqTX9Xc8Njrbs/KvfHruE4x6PM=
